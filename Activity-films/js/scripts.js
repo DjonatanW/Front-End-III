@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     },
-    { threshold: 0.5 }
+    { threshold: 1.5 }
   );
 
   observer.observe(videoSection);
