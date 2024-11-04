@@ -1,0 +1,11 @@
+p {
+  font-size: 14px;
+  color:aquamarine
+}
+
+@media (min-width:768px) {
+  p {
+    font-size: 20px;
+    color: red;
+  }
+}

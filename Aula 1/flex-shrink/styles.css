@@ -1,0 +1,19 @@
+.container {
+  border: 1px solid #ccc;
+  width: 360px;
+  margin:0 auto;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.item {
+  margin: 5px;
+  background-color: blueviolet;
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+

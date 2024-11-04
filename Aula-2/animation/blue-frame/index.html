@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+</head>
+<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .element {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        position: relative;
+        
+        animation: blue-frame 5s ease-in infinite;
+
+        /* animation-timing-function: ease-out; */
+      }
+
+      @keyframes blue-frame {
+        0% {
+          left: 0;
+        }
+        50% {
+          left: 200px;
+        }
+        100% {
+          left: 0;
+        }
+        
+      }
+    </style>
+    <div class="element"></div>
+</body>
+</html>
+
+<!-- animation-timing-function: cubic-bizier(0.45, 0.1, 0.25, 1);  -->

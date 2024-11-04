@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+</head>
+<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .element {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        
+        animation: cubic-bezier-example 2s cubic-bezier(0.65, 0.1, 0.25, 1) ;
+        /* animation-timing-function: cubic-bizier(0.45, 0.1, 0.25, 1) */
+        /* animation-delay: 5s; */
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+
+        /* animation-timing-function: ease-out; */
+      }
+
+      @keyframes cubic-bezier-example {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(200px);
+        }
+        
+      }
+    </style>
+    <div class="element"></div>
+</body>
+</html>
+
+<!-- animation-timing-function: cubic-bizier(0.45, 0.1, 0.25, 1);  -->

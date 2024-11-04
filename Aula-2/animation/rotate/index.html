@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+</head>
+<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100vh;
+      }
+
+      .element {
+        width: 100px;
+        height: 100px;
+        background-color: rebeccapurple ;
+      }
+      .element:hover {  
+        animation: rotate 2s infinite;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+        
+      }
+    </style>
+    <div class="element"></div>
+</body>
+</html>
