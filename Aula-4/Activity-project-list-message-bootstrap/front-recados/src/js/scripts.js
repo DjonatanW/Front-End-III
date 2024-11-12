@@ -25,13 +25,10 @@ async function fetchNotes(page) {
     const notes = response.data.message
 
     totalPages = response.data.totalPages
-
     notes.forEach((note) => {
       const noteCard = document.createElement('div')
       noteCard.classList.add('card')
       noteCard.classList.add('mb-3')
-      alert("aqui")
-      
       noteCard.innerHTML = `
         <h3 class="card-title">${note.title}</h3>
         <p class="card-description">${note.description}</p>
