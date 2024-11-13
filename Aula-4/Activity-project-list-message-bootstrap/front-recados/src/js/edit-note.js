@@ -3,9 +3,8 @@ const title = document.getElementById('title-edit')
 const description = document.getElementById('description-edit')
 
 const urlParams = new URLSearchParams(location.search)
-// ?id=4b816d38-c375-4ea9-9ba6-09bc1382e6e0
+
 const noteId = urlParams.get('id')
-// 4b816d38-c375-4ea9-9ba6-09bc1382e6e0
 
 console.log(noteId)
 
